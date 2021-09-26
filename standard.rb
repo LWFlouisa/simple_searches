@@ -14,7 +14,7 @@ def standard_search
   size_limit.times do
     option = options_list[number]
 
-    print "Candidate: #{candidate} Option: #{option}"
+    print "Candidate: #{candidate} Option: #{option} >>"
 
     if option == candidate
       puts " #{option} matches the candidate #{candidate}."
@@ -25,5 +25,9 @@ def standard_search
     end
 
     sleep(3)
+
+    number = number + 1
   end
 end
+
+standard_search
